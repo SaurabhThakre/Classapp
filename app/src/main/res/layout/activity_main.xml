@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/outlayout"
+        app:layout_constraintTop_toTopOf="@id/outlayout">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:background="#00897B"
+            android:onClick="dialog1"
+            android:text="Progress Dialog"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#00897B"
+            android:onClick="theme"
+            android:text="Dark Theme"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#00897B"
+            android:onClick="list"
+            android:text="List Dialog"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="List Dialog"
+            android:textColor="#800080"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#00897B"
+            android:onClick="notifytext"
+            android:text="Go to Notification activity"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:background="#00897B"
+            android:onClick="pop"
+            android:text="Go to popup menu activity"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

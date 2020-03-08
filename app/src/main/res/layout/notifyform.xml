@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity3"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#BBDEFB"
+tools:context=".Activity3">
+
+<LinearLayout
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="@id/activity3"
+    app:layout_constraintTop_toTopOf="@id/activity3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Training Program"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:max="3"
+        android:progress="0"
+        />
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/linear2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="@id/activity3"
+    app:layout_constraintTop_toBottomOf="@id/linear1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Profile Photo:"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/ic_launcher_backgrounda" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linear3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="@id/activity3"
+    app:layout_constraintTop_toBottomOf="@id/linear2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="25sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#fff" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linear4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="@id/activity3"
+    app:layout_constraintTop_toBottomOf="@id/linear3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textSize="25sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linear5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="@id/activity3"
+    app:layout_constraintTop_toBottomOf="@id/linear4">
+
+    <RadioGroup
+        android:id="@+id/rdgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linear6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="@id/activity3"
+    app:layout_constraintTop_toBottomOf="@id/linear5">
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Technology Preference:"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/activity3"
+        app:layout_constraintTop_toBottomOf="@id/text3">
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iphone"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTML5"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00897B"
+        android:text="Submit"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="No. of Registration: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
